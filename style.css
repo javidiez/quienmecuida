@@ -1,0 +1,186 @@
+body {
+    font-family: "Nunito";
+    background-color: #fbe4dc;
+    height: 100vh;
+}
+
+.navbar-1 {
+    background-color: #fbe4dc;
+}
+
+.work-button {
+    display: flex;
+    justify-content: end;
+    background-color: #fbe4dc;
+    padding-top: 50px;
+    font-weight: bold;
+}
+.btn-success{
+    font-size: 20px !important;
+    background-color: rgb(110, 179, 104) !important;
+    font-weight: 500 !important;
+}
+.btn-success:hover{
+    background-color: rgb(88, 155, 81) !important;
+}
+.btn-danger{
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    margin-right: 15px;
+    background-color: rgb(230, 94, 94) !important;
+}
+.btn-danger:hover{
+    background-color: rgb(204, 65, 65) !important;
+}
+.logo {
+    width: 100%;
+}
+
+.block-1 {
+    background-color: #fbe4dc;
+    margin-top:-60px
+}
+
+.block-1-1 {
+    background-color: #fbe4dc;
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.block-1-1-1 {
+    width: 80%;
+    margin-right: 50px;
+}
+.block-1-1-2 {
+    width: 80%;
+}
+
+
+.block-1-1-2-title {
+    font-size: 60px;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+.block-1-1-2-subtitle {
+    font-size: 30px;
+}
+.table{
+    border: 0px solid white !important;
+}
+.block-2{
+    font-size: 20px;
+    margin: 70px;
+
+}
+.block-2-icons{
+    font-size: 60px;
+}
+.block-2-text{
+    width: 25% !important;
+}
+.block-3{
+    background-image: url(img/ancianos.jpg);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.block-3-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+.block-3-1-1{
+    background-color: rgba(228, 228, 228, 0.9);
+    padding: 30px;
+    width: 50%;
+    view-timeline-name: --image;
+	view-timeline-axis: block;
+
+	animation-timeline: --image;
+	animation-name: show;
+
+	animation-range: entry 25% cover 30%;
+	animation-fill-mode: both;
+
+}
+.block-3-1-2{
+    background-color: rgba(228, 228, 228, 0.9);
+    padding: 30px;
+    width: 50%;
+    text-align: right;
+    view-timeline-name: --image;
+	view-timeline-axis: block;
+
+	animation-timeline: --image;
+	animation-name: show;
+
+	animation-range: entry 20% cover 30%;
+	animation-fill-mode: both;
+
+}
+.block-3-1-1-title{
+    margin-bottom: 50px;
+}
+.blockquote-footer{
+    margin-bottom: 30px !important;
+}
+.block-3-1-1-text{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.block-3-1-1-span{
+    margin-bottom: 20px;
+}
+.block-3-1-1-icon{
+    margin-right: 20px;
+}
+.block-4{
+    background-color: #fbe4dc;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+.block-4-1-text{
+    font-size: 35px;
+}
+.btn-primary{
+    font-size: 25px !important;
+    font-weight: 500 !important;
+    margin-top: 15px
+}
+.block-5{
+    height: 300px;
+    margin: 50px;
+}
+.block-5-title{
+    font-size: 50px
+}
+.block-5 img{
+    width: 80%;
+}
+.footer-1{
+    padding: 40px;
+}
+.asistente-img{
+    width: 60%;
+}
+
+
+
+@keyframes show {
+	from {
+		opacity: 0;
+		scale: 25%;
+	}
+
+	to {
+		opacity: 1;
+		scale: 100%;
+	}
+}
