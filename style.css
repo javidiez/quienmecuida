@@ -53,7 +53,6 @@ body {
 .block-2-icons {
     font-size: 60px;
 }
-
 .block-2-text {
     width: 25% !important;
 }
@@ -248,7 +247,15 @@ body {
 @media screen and (max-width: 575px) {
 
     .btn-danger {
+        width: 50% !important;
+        justify-content: flex-end;
         margin-bottom: 10px !important;
+
+    }
+
+    .btn-success {
+        width: 50% !important;
+        justify-content: flex-end;
     }
 
     .block-3 {
@@ -279,6 +286,22 @@ body {
         background-color: black;
     }
 }
+
+@media screen and (max-width: 412px) {
+    .btn-danger {
+        width: 70% !important;
+        justify-content: flex-end;
+
+    }
+
+    .btn-success {
+        width: 70% !important;
+        justify-content: flex-end;
+    }
+
+}
+
+
 @media screen and (max-width: 313px) {
     .block-1-1-2-title{
         font-size: 2rem;
