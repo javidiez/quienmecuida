@@ -1,64 +1,40 @@
 body {
     font-family: "Nunito";
     background-color: #fbe4dc;
-    height: 100vh;
 }
 
 .navbar-1 {
-    background-color: #fbe4dc;
+    background-color: #fbe4dc !important;
+    padding: 50px 0px;
+
+
 }
 
-.work-button {
-    display: flex;
-    justify-content: end;
-    background-color: #fbe4dc;
-    padding-top: 50px;
-    font-weight: bold;
-}
-.btn-success{
+.btn-success {
     font-size: 20px !important;
     background-color: rgb(110, 179, 104) !important;
     font-weight: 500 !important;
+    margin-bottom: 10px !important;
 }
-.btn-success:hover{
+
+.btn-success:hover {
     background-color: rgb(88, 155, 81) !important;
 }
-.btn-danger{
+
+.btn-danger {
     font-size: 20px !important;
     font-weight: 500 !important;
-    margin-right: 15px;
     background-color: rgb(230, 94, 94) !important;
+    margin-bottom: 10px !important;
 }
-.btn-danger:hover{
+
+.btn-danger:hover {
     background-color: rgb(204, 65, 65) !important;
-}
-.logo {
-    width: 100%;
-}
-
-.block-1 {
-    background-color: #fbe4dc;
-    margin-top:-60px
-}
-
-.block-1-1 {
-    background-color: #fbe4dc;
-    display: flex;
-    align-items: center;
-    align-content: flex-start;
-}
-
-.block-1-1-1 {
-    width: 80%;
-    margin-right: 50px;
-}
-.block-1-1-2 {
-    width: 80%;
 }
 
 
 .block-1-1-2-title {
-    font-size: 60px;
+    font-size: calc(2.6em + 1vw);
     font-weight: 600;
     font-style: normal;
 
@@ -67,120 +43,239 @@ body {
 .block-1-1-2-subtitle {
     font-size: 30px;
 }
-.table{
-    border: 0px solid white !important;
-}
-.block-2{
+
+.block-2 {
     font-size: 20px;
     margin: 70px;
 
 }
-.block-2-icons{
+
+.block-2-icons {
     font-size: 60px;
 }
-.block-2-text{
+
+.block-2-text {
     width: 25% !important;
 }
-.block-3{
+
+.block-3 {
     background-image: url(img/ancianos.jpg);
     width: 100%;
-    height: 100vh;
     display: flex;
+    justify-content: center;
+    padding: 50px 0px
 }
-.block-3-1{
-    display: flex;
-    justify-content: space-around;
+
+.block-3-1 {
     align-items: center;
     gap: 15px;
+    width: 80%;
+
 }
-.block-3-1-1{
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+.block-3-1-1 {
     background-color: rgba(228, 228, 228, 0.9);
     padding: 30px;
-    width: 50%;
     view-timeline-name: --image;
-	view-timeline-axis: block;
+    view-timeline-axis: block;
 
-	animation-timeline: --image;
-	animation-name: show;
+    animation-timeline: --image;
+    animation-name: show;
 
-	animation-range: entry 25% cover 30%;
-	animation-fill-mode: both;
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
 
 }
-.block-3-1-2{
+
+.block-3-1-2 {
     background-color: rgba(228, 228, 228, 0.9);
     padding: 30px;
-    width: 50%;
     text-align: right;
     view-timeline-name: --image;
-	view-timeline-axis: block;
+    view-timeline-axis: block;
 
-	animation-timeline: --image;
-	animation-name: show;
+    animation-timeline: --image;
+    animation-name: show;
 
-	animation-range: entry 20% cover 30%;
-	animation-fill-mode: both;
+    animation-range: entry 20% cover 30%;
+    animation-fill-mode: both;
 
 }
-.block-3-1-1-title{
+
+.block-3-1-1-title {
     margin-bottom: 50px;
 }
-.blockquote-footer{
+
+.blockquote-footer {
     margin-bottom: 30px !important;
 }
-.block-3-1-1-text{
+
+.block-3-1-1-text {
     font-size: 30px;
     display: flex;
     flex-direction: column;
 }
-.block-3-1-1-span{
+
+.block-3-1-1-span {
     margin-bottom: 20px;
 }
-.block-3-1-1-icon{
+
+.block-3-1-1-icon {
     margin-right: 20px;
 }
-.block-4{
+
+.block-4 {
     background-color: #fbe4dc;
-    height: 280px;
+    min-height: 280px;
     display: flex;
     align-items: center;
     justify-content: baseline;
 }
-.block-4-1-text{
+
+.block-4-1-text {
     font-size: 35px;
 }
-.btn-primary{
+
+.btn-primary {
     font-size: 25px !important;
     font-weight: 500 !important;
     margin-top: 15px
 }
-.block-5{
-    height: 300px;
+
+.block-5 {
+    min-height: 300px;
     margin: 50px;
 }
-.block-5-title{
+
+.block-5-title {
     font-size: 50px
 }
-.block-5 img{
+
+.block-5 img {
     width: 80%;
 }
-.footer-1{
+
+.footer-1 {
     padding: 40px;
 }
-.asistente-img{
-    width: 60%;
+
+@media screen and (max-width: 991px) {
+    .btn-danger {
+        width: 25% !important;
+        justify-content: flex-end;
+    }
+
+    .btn-success {
+        width: 25% !important;
+        justify-content: flex-end;
+    }
+
+    .block-3-1 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .block-3-1-1 {
+        width: 90%;
+    }
+
+    .logo-block {
+        flex-direction: column;
+    }
+    .text-block{
+        min-width: 100%;
+    }
+    .logo{
+        min-width: 80%; 
+    }
+
+    .top-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-danger {
+        width: 50% !important;
+        justify-content: flex-end;
+
+    }
+
+    .btn-success {
+        width: 50% !important;
+        justify-content: flex-end;
+    }
 }
 
 
+@media screen and (max-width: 767px) {
+    .top-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-@keyframes show {
-	from {
-		opacity: 0;
-		scale: 25%;
-	}
+    .btn-danger {
+        width: 50% !important;
+        justify-content: flex-end;
 
-	to {
-		opacity: 1;
-		scale: 100%;
-	}
+    }
+
+    .btn-success {
+        width: 50% !important;
+        justify-content: flex-end;
+    }
+    .asistente-img{
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+
+    .btn-danger {
+        margin-bottom: 10px !important;
+    }
+
+    .block-3 {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 436px) {
+
+    .block-4-1 {
+        margin: 30px !important;
+    }
+
+    .block-3 {
+        background-size: cover;
+    }
+
+    .btn-danger {
+        width: 65% !important;
+        justify-content: flex-end;
+        background-color: black;
+
+    }
+
+    .btn-success {
+        width: 60% !important;
+        justify-content: flex-end;
+        background-color: black;
+    }
 }
